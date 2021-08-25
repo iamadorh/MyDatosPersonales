@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyDatosPersonales</string>
+    <string name="tel">Teléfono</string>
+    <string name="email">E-Mail</string>
+    <string name="desc">Descripción del Contacto</string>
+    <string name="namecito">Nombre Completo</string>
+    <string name="fechita">Fecha de Nacimiento</string>
+</resources>
