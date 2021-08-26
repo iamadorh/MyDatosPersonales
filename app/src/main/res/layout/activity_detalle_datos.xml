@@ -53,4 +53,12 @@
         android:layout_marginTop="20dp"
         android:textSize="40sp"/>
 
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Datos"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="60dp"/>
+
 </androidx.appcompat.widget.LinearLayoutCompat>

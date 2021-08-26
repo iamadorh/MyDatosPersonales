@@ -2,7 +2,10 @@ package com.example.mydatospersonales;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -31,6 +34,22 @@ public class DetalleDatos extends AppCompatActivity {
         descripc.setText(descrip);
         TextView fec = (TextView) findViewById(R.id.tvFechaDetalle);
         fec.setText(fechitita);
+
+        Button btnEditar = (Button) findViewById(R.id.btnEditar);
+        btnEditar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetalleDatos.this, MainActivity.class);
+                intent.putExtra("Nombre2", Name.getText());
+                intent.putExtra("Telefono2", tel.getText());
+                intent.putExtra("Email2", correo.getText());
+                intent.putExtra("Desc2", descripc.getText());
+                intent.putExtra("Fechita2", fec.getText());
+                startActivity(intent);
+            }
+
+
+        });
 
     }
 }
