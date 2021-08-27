@@ -37,8 +37,6 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("Fechita", etFechaNac.getText());
                 startActivity(intent);
             }
-
-
         });
     }
 
